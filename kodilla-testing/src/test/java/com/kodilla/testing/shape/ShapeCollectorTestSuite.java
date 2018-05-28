@@ -70,7 +70,7 @@ public class ShapeCollectorTestSuite {
         //When
         shapeCollector.showFigures();
         //Then
-        Assert.assertEquals(shapeCollector.listOfFigures.size(), 1);
+        Assert.assertEquals(1, shapeCollector.listOfFigures.size());
     }
 
 }
