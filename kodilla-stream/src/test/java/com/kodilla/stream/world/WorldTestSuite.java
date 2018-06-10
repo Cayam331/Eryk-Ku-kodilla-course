@@ -9,13 +9,13 @@ public class WorldTestSuite {
     @Test
     public void testGetPeopleQuantity() {
         //Given
-        Country poland = new Country();
-        Country germany = new Country();
-        Country russia = new Country();
+        Country poland = new Country(new BigDecimal(900));
+        Country germany = new Country(new BigDecimal(1000));
+        Country russia = new Country(new BigDecimal(160));
 
-        Country unitedStates = new Country();
-        Country mexico = new Country();
-        Country kanada = new Country();
+        Country unitedStates = new Country(new BigDecimal(10000));
+        Country mexico = new Country(new BigDecimal(800));
+        Country kanada = new Country(new BigDecimal(50));
 
 
         Continent europe = new Continent();
@@ -36,7 +36,7 @@ public class WorldTestSuite {
         BigDecimal result = theWorld.getPeopleQuantity();
 
         //Then
-        BigDecimal expectedResult = new BigDecimal("36");
+        BigDecimal expectedResult = new BigDecimal("12910");
         Assert.assertEquals(expectedResult, result);
     }
 }

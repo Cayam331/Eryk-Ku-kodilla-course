@@ -1,11 +1,17 @@
 package com.kodilla.stream.world;
 
+
 import java.math.BigDecimal;
 
+
 public final class Country {
+    private final BigDecimal numberOfPeople;
+
+    public Country(final BigDecimal numberOfPeople) {
+        this.numberOfPeople = numberOfPeople;
+    }
 
     public BigDecimal getPeopleQuantity(){
-        BigDecimal numberOfPeopleInCountry = new BigDecimal("6");
-        return numberOfPeopleInCountry;
+        return numberOfPeople;
     }
 }
