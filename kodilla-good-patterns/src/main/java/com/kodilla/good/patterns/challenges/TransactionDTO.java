@@ -4,6 +4,7 @@ public class TransactionDTO {
     private Customer customer;
     private Product product;
     private boolean shoppingSucedded;
+
     public Customer getCustomer() {
         return customer;
     }

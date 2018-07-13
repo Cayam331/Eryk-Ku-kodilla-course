@@ -7,22 +7,26 @@ public class ShapeCollectorTestSuite {
     private static int testCounter;
 
     @BeforeClass
-    public static void testSuiteStart(){
+    public static void testSuiteStart() {
         System.out.println("Test suite has started");
     }
+
     @AfterClass
-    public static void testSuiteStop(){
+    public static void testSuiteStop() {
         System.out.println("Test suite has ended");
     }
+
     @Before
-    public void testCaseStart(){
+    public void testCaseStart() {
         testCounter++;
         System.out.println("Test number: " + testCounter);
     }
+
     @After
-    public void testCaseStop(){
+    public void testCaseStop() {
         System.out.println("Test case has ended");
     }
+
     @Test
     public void testAddFigure() {
         //Given
@@ -35,9 +39,10 @@ public class ShapeCollectorTestSuite {
         Assert.assertEquals(shapeCollector.listOfFigures.contains(circle), true);
         Assert.assertTrue(result);
     }
+
     @Test
     public void testRemoveFigure() {
-    //Given
+        //Given
         ShapeCollector shapeCollector = new ShapeCollector();
         Circle circle = new Circle();
         shapeCollector.listOfFigures.add(circle);
@@ -48,6 +53,7 @@ public class ShapeCollectorTestSuite {
         Assert.assertEquals(shapeCollector.listOfFigures.contains(circle), false);
         Assert.assertTrue(result);
     }
+
     @Test
     public void testFindFigure() {
         //Given
@@ -61,6 +67,7 @@ public class ShapeCollectorTestSuite {
         //Then
         Assert.assertEquals(shape, square);
     }
+
     @Test
     public void testShowFigure() {
         //Given

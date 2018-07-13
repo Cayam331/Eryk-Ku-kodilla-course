@@ -13,7 +13,6 @@ public class StatisticsCounter {
     public double averageCommentsPerPost;
 
 
-
     public void calculateAdvStatistics(Statistics statistics) {
         List<String> listWithUsers = statistics.userNames();
         numberOfUsers = listWithUsers.size();
@@ -25,17 +24,15 @@ public class StatisticsCounter {
         } else {
             averageUserPosts = numberOfUsers / numberOfPosts;
         }
-        if (numberOfUsers == 0 || numberOfComments == 0){
+        if (numberOfUsers == 0 || numberOfComments == 0) {
             averageUserComments = 0;
-        }
-        else {
+        } else {
             averageUserComments = numberOfUsers / numberOfComments;
         }
-        if (numberOfPosts == 0 || numberOfComments == 0){
+        if (numberOfPosts == 0 || numberOfComments == 0) {
             averageCommentsPerPost = 0;
-        }
-        else{
+        } else {
             averageCommentsPerPost = numberOfPosts / numberOfComments;
-            }
+        }
     }
 }

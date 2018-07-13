@@ -30,6 +30,7 @@ public final class Book {
     public int getYearOfPublication() {
         return yearOfPublication;
     }
+
     @Override
     public String toString() {
         return "Book{" +

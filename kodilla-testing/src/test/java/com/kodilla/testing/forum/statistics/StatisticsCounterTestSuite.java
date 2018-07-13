@@ -130,10 +130,11 @@ public class StatisticsCounterTestSuite {
         //When
         statisticsCounter.calculateAdvStatistics(statisticsMock);
         //Then
-        Assert.assertEquals(statisticsCounter.averageUserPosts, 0,003);
+        Assert.assertEquals(statisticsCounter.averageUserPosts, 0, 003);
         Assert.assertEquals(statisticsCounter.averageCommentsPerPost, 10, 0);
         Assert.assertEquals(statisticsCounter.averageUserComments, 0, 3);
     }
+
     @Test
     public void testCalculateAdvStatisticsMoreCommentsThanPosts() {
         //Given
@@ -154,10 +155,11 @@ public class StatisticsCounterTestSuite {
         //When
         statisticsCounter.calculateAdvStatistics(statisticsMock);
         //Then
-        Assert.assertEquals(statisticsCounter.averageUserPosts, 0,3);
+        Assert.assertEquals(statisticsCounter.averageUserPosts, 0, 3);
         Assert.assertEquals(statisticsCounter.averageCommentsPerPost, 0, 1);
         Assert.assertEquals(statisticsCounter.averageUserComments, 0, 03);
     }
+
     @Test
     public void testCalculateAdvStatistics0Users() {
         //Given
@@ -175,10 +177,11 @@ public class StatisticsCounterTestSuite {
         //When
         statisticsCounter.calculateAdvStatistics(statisticsMock);
         //Then
-        Assert.assertEquals(statisticsCounter.averageUserPosts, 0,0);
+        Assert.assertEquals(statisticsCounter.averageUserPosts, 0, 0);
         Assert.assertEquals(statisticsCounter.averageCommentsPerPost, 10, 0);
         Assert.assertEquals(statisticsCounter.averageUserComments, 0, 0);
     }
+
     @Test
     public void testCalculateAdvStatistics100Users() {
         //Given
@@ -189,8 +192,8 @@ public class StatisticsCounterTestSuite {
         int generatorValue;
         generatorValue = generator.nextInt(10);
         String randomUserName = "";
-        for(int i = 0; i < 100; i++){
-            for(int j = 0; j < generatorValue; j++) {
+        for (int i = 0; i < 100; i++) {
+            for (int j = 0; j < generatorValue; j++) {
                 randomUserName = randomUserName + "a";
             }
             userNames.add(randomUserName);
@@ -208,9 +211,9 @@ public class StatisticsCounterTestSuite {
         statisticsCounter.calculateAdvStatistics(statisticsMock);
         //Then
         Assert.assertEquals(statisticsCounter.numberOfUsers, 100);
-        Assert.assertEquals(statisticsCounter.averageUserComments, 10,0);
-        Assert.assertEquals(statisticsCounter.averageUserPosts, 1,0);
-        Assert.assertEquals(statisticsCounter.averageCommentsPerPost, 10,0);
+        Assert.assertEquals(statisticsCounter.averageUserComments, 10, 0);
+        Assert.assertEquals(statisticsCounter.averageUserPosts, 1, 0);
+        Assert.assertEquals(statisticsCounter.averageCommentsPerPost, 10, 0);
 
     }
 }

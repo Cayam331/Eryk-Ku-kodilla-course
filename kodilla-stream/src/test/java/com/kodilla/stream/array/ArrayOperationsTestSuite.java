@@ -6,7 +6,7 @@ import org.junit.Test;
 public class ArrayOperationsTestSuite {
 
     @Test
-    public void testGetAverage(){
+    public void testGetAverage() {
 
         //Given
         int[] array1 = new int[5];

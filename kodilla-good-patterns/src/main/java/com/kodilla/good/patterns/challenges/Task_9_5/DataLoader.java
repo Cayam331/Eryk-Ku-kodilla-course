@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.HashSet;
 
 public class DataLoader {
-    public static HashSet<Flight> loadData(){
+    public static HashSet<Flight> loadData() {
 
         Flight flightOne = new Flight("Kraków", "Wrocław");
         Flight flightTwo = new Flight("Wrocław", "Radom");

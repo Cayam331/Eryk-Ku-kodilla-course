@@ -11,7 +11,7 @@ public class FlightFinder {
         flights.put("Lawica", false);
         flights.put("Modlin", true);
 
-        if (!flights.containsKey(flight.getDeaprtureAirport())){
+        if (!flights.containsKey(flight.getDeaprtureAirport())) {
             throw new RouteNotFoundException("There is no such airport");
         }
 

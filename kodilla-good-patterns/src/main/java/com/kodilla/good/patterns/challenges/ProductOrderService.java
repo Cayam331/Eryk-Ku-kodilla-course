@@ -10,15 +10,16 @@ public class ProductOrderService {
         this.sellProduct = sellProduct;
         this.transactionInfo = transactionInfo;
     }
-    public TransactionDTO process(final TransactionRequest transactionRequest){
-       boolean isTransactionFinished = sellProduct.sellProduct(transactionRequest.getCustomer(), transactionRequest.getProduct());
-       if(isTransactionFinished){
-           transactionInfo.customerInfrom(transactionRequest.getCustomer());
-           saveTransaction.saveTransaction(transactionRequest.getCustomer(), transactionRequest.getProduct());
-           return new TransactionDTO(transactionRequest.getCustomer(), transactionRequest.getProduct(), true);
-       } else{
-           return new TransactionDTO(transactionRequest.getCustomer(), transactionRequest.getProduct(), false);
-       }
+
+    public TransactionDTO process(final TransactionRequest transactionRequest) {
+        boolean isTransactionFinished = sellProduct.sellProduct(transactionRequest.getCustomer(), transactionRequest.getProduct());
+        if (isTransactionFinished) {
+            transactionInfo.customerInfrom(transactionRequest.getCustomer());
+            saveTransaction.saveTransaction(transactionRequest.getCustomer(), transactionRequest.getProduct());
+            return new TransactionDTO(transactionRequest.getCustomer(), transactionRequest.getProduct(), true);
+        } else {
+            return new TransactionDTO(transactionRequest.getCustomer(), transactionRequest.getProduct(), false);
+        }
 
     }
 }

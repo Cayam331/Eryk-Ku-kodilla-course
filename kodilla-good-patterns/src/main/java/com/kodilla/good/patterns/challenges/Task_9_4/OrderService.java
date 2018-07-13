@@ -10,15 +10,15 @@ public class OrderService {
         this.producer = orderProcess;
         this.saveOrder = saveOrder;
     }
-    public OrderDTO process1 (final OrderRequest orderRequest){
+
+    public OrderDTO process1(final OrderRequest orderRequest) {
         boolean isOrderPositive = producer.process();
-        if(isOrderPositive) {
+        if (isOrderPositive) {
             orderInformation.orderInfo(orderRequest.getProducer());
             saveOrder.saveOrder(orderRequest.getProducer());
             System.out.println("Order was succesfull");
             return new OrderDTO(orderRequest.getProduct(), orderRequest.getProducer(), true);
-        }
-        else{
+        } else {
             System.out.println("Order was unsuccesfull");
             return new OrderDTO(orderRequest.getProduct(), orderRequest.getProducer(), false);
         }

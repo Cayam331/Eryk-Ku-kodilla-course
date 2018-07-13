@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.kodilla.stream.array.ArrayOperationsTestSuite" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-06-27T10:33:53" hostname="WINDOWS-POOF9JD" time="0.028">
-  <properties/>
-  <testcase name="testGetAverage" classname="com.kodilla.stream.array.ArrayOperationsTestSuite" time="0.028"/>
-  <system-out><![CDATA[2
+<testsuite name="com.kodilla.stream.array.ArrayOperationsTestSuite" tests="1" skipped="0" failures="0" errors="0"
+           timestamp="2018-06-27T10:33:53" hostname="WINDOWS-POOF9JD" time="0.028">
+    <properties/>
+    <testcase name="testGetAverage" classname="com.kodilla.stream.array.ArrayOperationsTestSuite" time="0.028"/>
+    <system-out><![CDATA[2
 4
 3
 5
 2
 ]]></system-out>
-  <system-err><![CDATA[]]></system-err>
+    <system-err><![CDATA[]]></system-err>
 </testsuite>

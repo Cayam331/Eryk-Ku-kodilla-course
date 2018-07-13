@@ -16,11 +16,7 @@ public class MovieStoreRunner {
         result = result.replace("Iron!", "Iron ");
 
 
-
         System.out.println(result);
-
-
-
 
 
     }

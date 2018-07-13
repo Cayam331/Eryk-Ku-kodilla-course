@@ -3,15 +3,16 @@ package com.kodilla.exception.test;
 public class FirstChallenge {
 
     public double divide(double a, double b) throws ArithmeticException {
-        if(b == 0){
+        if (b == 0) {
             throw new ArithmeticException();
         }
-        System.out.println(a/b);
+        System.out.println(a / b);
         return a / b;
     }
 
     /**
      * This main can throw an ArithmeticException!!!
+     *
      * @param args
      */
     public static void main(String[] args) {
@@ -21,7 +22,7 @@ public class FirstChallenge {
 
         try {
             result = firstChallenge.divide(3, 0);
-        } catch(ArithmeticException e) {
+        } catch (ArithmeticException e) {
             System.out.println("You cannot divide by 0   ");
         } finally {
             System.out.println("End");

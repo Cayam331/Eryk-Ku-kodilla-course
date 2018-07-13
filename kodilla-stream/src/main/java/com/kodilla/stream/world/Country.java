@@ -11,7 +11,7 @@ public final class Country {
         this.numberOfPeople = numberOfPeople;
     }
 
-    public BigDecimal getPeopleQuantity(){
+    public BigDecimal getPeopleQuantity() {
         return numberOfPeople;
     }
 }
