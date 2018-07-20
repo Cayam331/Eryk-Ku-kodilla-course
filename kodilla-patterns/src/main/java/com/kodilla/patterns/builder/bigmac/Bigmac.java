@@ -2,6 +2,7 @@ package com.kodilla.patterns.builder.bigmac;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 public class Bigmac {
@@ -60,10 +61,12 @@ public class Bigmac {
         } else{
             throw new IllegalStateException("There is no such sauce !");
         }
-        if(ingredients.equals(String.valueOf(INGREDIENTS))) {
-            this.ingredients = new ArrayList<>(ingredients);
-        } else{
-            throw new IllegalStateException("There is no such ingredient !");
+        for(int n = 0; n < ingredients.size(); n++) {
+            if (INGREDIENTS.contains(ingredients.get(n))) {
+                this.ingredients = new ArrayList<>(ingredients);
+            } else {
+                throw new IllegalStateException("There is no such ingredient !");
+            }
         }
     }
 

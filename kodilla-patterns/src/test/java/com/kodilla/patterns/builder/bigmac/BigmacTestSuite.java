@@ -14,6 +14,8 @@ public class BigmacTestSuite {
                .burgers(3)
                .sauce("standard")
                .ingredient("pepper")
+               .ingredient("onion")
+               .ingredient("chili")
                .build();
         //Then
         System.out.println(bigmac.toString());
