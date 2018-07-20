@@ -17,7 +17,7 @@ public class Bigmac {
     private final String bun;
     private final int burgers;
     private final String sauce;
-    private List<String> ingredients = new ArrayList<>();
+    private final List<String> ingredients = new ArrayList<>();
 
     public static class BigmacBuilder{
         private String bun;
@@ -63,7 +63,7 @@ public class Bigmac {
         }
         for(int n = 0; n < ingredients.size(); n++) {
             if (INGREDIENTS.contains(ingredients.get(n))) {
-                this.ingredients = new ArrayList<>(ingredients);
+                this.ingredients.add(ingredients.get(n));
             } else {
                 throw new IllegalStateException("There is no such ingredient !");
             }
