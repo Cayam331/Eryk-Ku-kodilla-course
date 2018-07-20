@@ -50,13 +50,13 @@ public class Bigmac {
     }
 
     private Bigmac(final String bun, final int burgers, final String sauce, List<String> ingredients) {
-        if(bun == BUNWITHOUTSESAME || bun == BUNWITHSESAME) {
+        if(bun.equals(BUNWITHOUTSESAME) || bun.equals(BUNWITHSESAME)) {
             this.bun = bun;
         } else {
             throw new IllegalStateException("There is no such bun!");
         }
         this.burgers = burgers;
-        if(sauce == SAUCEBARBECUE || sauce == SAUCESTANDARD || sauce == SAUCETHOUSANDISLANDS) {
+        if(sauce.equals(SAUCEBARBECUE) || sauce.equals(SAUCESTANDARD) || sauce.equals(SAUCETHOUSANDISLANDS) ) {
             this.sauce = sauce;
         } else{
             throw new IllegalStateException("There is no such sauce !");

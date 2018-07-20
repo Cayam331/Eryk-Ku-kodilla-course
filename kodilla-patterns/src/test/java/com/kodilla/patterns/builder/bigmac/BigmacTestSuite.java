@@ -18,7 +18,7 @@ public class BigmacTestSuite {
                .ingredient("chili")
                .build();
         //Then
-        System.out.println(bigmac.toString());
+        System.out.println(bigmac);
         Assert.assertEquals(bigmac.getBurgers(), 3);
 
     }
