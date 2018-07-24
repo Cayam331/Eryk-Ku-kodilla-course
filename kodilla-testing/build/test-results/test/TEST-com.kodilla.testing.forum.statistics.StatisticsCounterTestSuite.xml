@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.kodilla.testing.forum.statistics.StatisticsCounterTestSuite" tests="7" skipped="0" failures="0" errors="0" timestamp="2018-07-24T07:51:45" hostname="WINDOWS-POOF9JD" time="0.137">
+<testsuite name="com.kodilla.testing.forum.statistics.StatisticsCounterTestSuite" tests="7" skipped="0" failures="0" errors="0" timestamp="2018-07-24T11:10:02" hostname="WINDOWS-POOF9JD" time="0.235">
   <properties/>
-  <testcase name="testCalculateAdvStatisticsMoreCommentsThanPosts" classname="com.kodilla.testing.forum.statistics.StatisticsCounterTestSuite" time="0.13"/>
+  <testcase name="testCalculateAdvStatisticsMoreCommentsThanPosts" classname="com.kodilla.testing.forum.statistics.StatisticsCounterTestSuite" time="0.227"/>
   <testcase name="testCalculateAdvStatistics0Posts" classname="com.kodilla.testing.forum.statistics.StatisticsCounterTestSuite" time="0.001"/>
   <testcase name="testCalculateAdvStatistics0Users" classname="com.kodilla.testing.forum.statistics.StatisticsCounterTestSuite" time="0.001"/>
-  <testcase name="testCalculateAdvStatisticsRandomData" classname="com.kodilla.testing.forum.statistics.StatisticsCounterTestSuite" time="0.001"/>
-  <testcase name="testCalculateAdvStatistics100Users" classname="com.kodilla.testing.forum.statistics.StatisticsCounterTestSuite" time="0.001"/>
-  <testcase name="testCalculateAdvStatisticsLessCommentsThanPosts" classname="com.kodilla.testing.forum.statistics.StatisticsCounterTestSuite" time="0.001"/>
-  <testcase name="testCalculateAdvStatistics1000Posts" classname="com.kodilla.testing.forum.statistics.StatisticsCounterTestSuite" time="0.001"/>
+  <testcase name="testCalculateAdvStatisticsRandomData" classname="com.kodilla.testing.forum.statistics.StatisticsCounterTestSuite" time="0.0"/>
+  <testcase name="testCalculateAdvStatistics100Users" classname="com.kodilla.testing.forum.statistics.StatisticsCounterTestSuite" time="0.002"/>
+  <testcase name="testCalculateAdvStatisticsLessCommentsThanPosts" classname="com.kodilla.testing.forum.statistics.StatisticsCounterTestSuite" time="0.0"/>
+  <testcase name="testCalculateAdvStatistics1000Posts" classname="com.kodilla.testing.forum.statistics.StatisticsCounterTestSuite" time="0.0"/>
   <system-out><![CDATA[Starting test suite
 Executing test number: 1
 Test number: 1 positive

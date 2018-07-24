@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.kodilla.stream.forum.ForumTestSuite" tests="2" skipped="0" failures="0" errors="0" timestamp="2018-07-24T07:51:43" hostname="WINDOWS-POOF9JD" time="0.003">
+<testsuite name="com.kodilla.stream.forum.ForumTestSuite" tests="2" skipped="0" failures="0" errors="0" timestamp="2018-07-24T11:09:59" hostname="WINDOWS-POOF9JD" time="0.007">
   <properties/>
-  <testcase name="testGetLocationsOfFriends" classname="com.kodilla.stream.forum.ForumTestSuite" time="0.001"/>
+  <testcase name="testGetLocationsOfFriends" classname="com.kodilla.stream.forum.ForumTestSuite" time="0.005"/>
   <testcase name="testGetLocationsOfFriendsOfFriends" classname="com.kodilla.stream.forum.ForumTestSuite" time="0.002"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
