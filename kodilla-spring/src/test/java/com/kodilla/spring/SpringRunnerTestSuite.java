@@ -43,7 +43,7 @@ public class SpringRunnerTestSuite {
         //Given
         ApplicationContext context =
                 new AnnotationConfigApplicationContext("com.kodilla.spring");
-        Shape shape = (Shape)context.getBean("square");
+        Shape shape = (Shape)context.getBean("createSquare");
         //When
         String name = shape.getShapeName();
         //Then
